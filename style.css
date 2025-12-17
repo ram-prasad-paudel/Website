@@ -1,0 +1,62 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+
+body{background:#121212;color:#fff;line-height:1.6;}
+
+/* Header */
+.header{display:flex;justify-content:space-between;align-items:center;padding:15px 10%;background:#000;position:sticky;top:0;z-index:100;}
+.logo{font-size:26px;font-weight:700;color:#00ff99;}
+.nav ul{list-style:none;display:flex;gap:25px;}
+.nav a{text-decoration:none;color:#fff;font-weight:500;transition:0.3s;}
+.nav a:hover{color:#00ff99;}
+
+/* Hero */
+.hero{display:flex;align-items:center;justify-content:space-between;padding:80px 10%;gap:40px;flex-wrap:wrap;}
+.hero-text h1{font-size:42px;}
+.hero-text span{color:#00ff99;}
+.hero-text h2{margin:10px 0;color:#aaa;}
+.hero-text p{max-width:500px;margin-bottom:25px;}
+.hero-img img{max-width:420px;width:100%;border-radius:15px;opacity:0.9;}
+
+.btn{padding:12px 25px;border-radius:30px;text-decoration:none;font-weight:600;display:inline-block;}
+.primary{background:#00ff99;color:#000;}
+.secondary{border:2px solid #00ff99;color:#00ff99;margin-left:10px;}
+
+/* Sections */
+section{padding:80px 10%;}
+.section-title{text-align:center;font-size:36px;margin-bottom:20px;color:#00ff99;}
+.section-desc{text-align:center;max-width:700px;margin:0 auto 40px;color:#ccc;}
+
+/* Skills */
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:20px;}
+.skill{background:#1e1e1e;padding:20px;border-radius:10px;text-align:center;transition:0.3s;}
+.skill i{font-size:40px;color:#00ff99;margin-bottom:10px;}
+.skill:hover{transform:translateY(-8px);}
+
+/* Services */
+.services{background:#181818;}
+.service-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;}
+.card{background:#1f1f1f;padding:30px;border-radius:15px;text-align:center;transition:0.3s;}
+.card i{font-size:40px;color:#00ff99;margin-bottom:15px;}
+.card:hover{transform:translateY(-10px);}
+
+/* Portfolio */
+.portfolio-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;}
+.portfolio-item{background:#1f1f1f;padding:60px 20px;border-radius:12px;text-align:center;transition:0.3s;}
+.portfolio-item:hover{background:#00ff99;color:#000;}
+
+/* Contact */
+.contact{background:#181818;}
+.contact-form{max-width:500px;margin:0 auto;display:flex;flex-direction:column;gap:15px;}
+.contact-form input,.contact-form textarea{padding:12px;border-radius:8px;border:none;background:#1f1f1f;color:#fff;}
+.contact-form button{border:none;cursor:pointer;}
+
+/* Footer */
+.footer{text-align:center;padding:25px;background:#000;}
+.socials a{color:#fff;margin:0 10px;font-size:20px;}
+.socials a:hover{color:#00ff99;}
+
+/* Mobile */
+@media(max-width:768px){
+  .hero{flex-direction:column;text-align:center;}
+  .nav ul{gap:15px;}
+}
